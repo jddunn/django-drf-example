@@ -4,7 +4,7 @@ Django example project with modular structure for loading different apps with th
 
 ![example-page](screenshots/django-articles.png)
 
-![example-api](screenshots/django-api.png)
+![example-api](screenshots/django-articles-api.png)
 
 ## Installation
 
