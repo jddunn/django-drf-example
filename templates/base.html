@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Django Project</title>
+    <!-- Example of including a static CSS file -->
+    {% comment %} <link href="{% static 'css/style.css' %}" rel="stylesheet"> {% endcomment %}
+</head>
+<body>
+    <header>
+        <h1>Django Project</h1>
+        <!-- Example of including a static image -->
+        <img src="{% static 'images/cat.jpg' %}" alt="Logo">
+    </header>
+
+    <main>
+        {% block content %}
+        <!-- Content will be overridden in child templates -->
+        {% endblock %}
+    </main>
+
+    <footer>
+        <p>© 2023 My Django Project</p>
+    </footer>
+
+    <!-- Example of including a static JavaScript file -->
+    {% comment %} <script src="{% static 'js/script.js' %}"></script> {% endcomment %}
+</body>
+</html>
